@@ -70,6 +70,7 @@ Capstone-nal (Phase 19) együtt — official: ~1028.5 óra, személyes becslés:
 | 2026-09-22 | Placement quiz | 6/10 | find-your-level kvíz, terület-bontás fent |
 | 2026-09-23 | Phase 0 / 01 Dev Environment | -- | verify.py PASS (Python 3.12.14, Git 2.43.0); repo áthelyezve /mnt/c-ről ~/projects-be (WSL hardlink hiba miatt) |
 | 2026-09-23 | Phase 0 / 02 Git & Collaboration | -- | saját `my-progress` branch a fork-on (oszabolcs81/ai-engineering-from-scratch), fine-grained PAT beállítva (Contents + Workflows: Read and write), .gitignore commit pusholva |
+| 2026-09-23 | Phase 0 / 03 GPU Setup & Cloud | -- | nvidia-smi + PyTorch 2.6.0+cu124 OK (CUDA available: True, Quadro T1000, 4.3 GB VRAM); CPU vs GPU benchmark mért eredmény: CPU 0.706s, GPU 0.217s, **speedup 3x** (mobil GPU-nál reális, asztali kártyánál nagyobb lenne); VRAM-becslés: ~2.15B paraméter fp16 elméleti felső határ (tárolás), tréninghez ennek töredéke
 
 ## Review queue
 - Phase 1: valószínűségszámítás / Bayes-tétel (dobás-valószínűség kérdés hibázva)
