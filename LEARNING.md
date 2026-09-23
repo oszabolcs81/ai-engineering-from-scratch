@@ -20,31 +20,49 @@ meglévő 20+ éves IT tapasztalat kibővítése, nem karrierváltás.
 - Következmény: Phase 1-3 helyben (CPU/GPU) elvégezhető; Phase 4+ nagyobb tréningnél Google Colab (ingyenes T4, 16 GB VRAM) ajánlott VRAM-korlát miatt, nem elvi okból
 
 ## Path
-| Phase | Name | Status | Est. hours |
-|-------|------|--------|------------|
-| 0 | Setup & Tooling | Do | 14 |
-| 1 | Math Foundations | Review | 23 |
-| 2 | ML Fundamentals | Skip | -- |
-| 3 | Deep Learning Core | Review | 15 |
-| 4 | Computer Vision | Skip | -- |
-| 5 | NLP Foundations to Advanced | Review | 30 |
-| 6 | Speech & Audio | Skip | -- |
-| 7 | Transformers Deep Dive | Do | 14 |
-| 8 | Generative AI | Do | 14 |
-| 9 | Reinforcement Learning | Do | 13 |
-| 10 | LLMs from Scratch | Do | 26 |
-| 11 | LLM Engineering | Do | 17 |
-| 12 | Multimodal AI | Do | 65 |
-| 13 | Tools & Protocols | Do | 24.5 |
-| 14 | Agent Engineering | Do | 42 |
-| 15 | Autonomous Systems | Do | 20 |
-| 16 | Multi-Agent & Swarms | Do | 28 |
-| 17 | Infrastructure & Production | Do | 32 |
-| 18 | Ethics, Safety & Alignment | Do | 31 |
-| 19 | Capstone Projects | Do | 620 |
+| Phase | Name | Status | Est. hours (official) | Est. hours (personal) |
+|-------|------|--------|------------------------|------------------------|
+| 0 | Setup & Tooling | Do | 14 | **2.7** (mért, l. lent) |
+| 1 | Math Foundations | Review | 23 | 17.7 |
+| 2 | ML Fundamentals | Skip | -- | -- |
+| 3 | Deep Learning Core | Review | 15 | 11.5 |
+| 4 | Computer Vision | Skip | -- | -- |
+| 5 | NLP Foundations to Advanced | Review | 30 | 23.1 |
+| 6 | Speech & Audio | Skip | -- | -- |
+| 7 | Transformers Deep Dive | Do | 14 | 10.8 |
+| 8 | Generative AI | Do | 14 | 10.8 |
+| 9 | Reinforcement Learning | Do | 13 | 10.0 |
+| 10 | LLMs from Scratch | Do | 26 | 20.0 |
+| 11 | LLM Engineering | Do | 17 | 13.1 |
+| 12 | Multimodal AI | Do | 65 | 50.0 |
+| 13 | Tools & Protocols | Do | 24.5 | 18.8 |
+| 14 | Agent Engineering | Do | 42 | 32.3 |
+| 15 | Autonomous Systems | Do | 20 | 15.4 |
+| 16 | Multi-Agent & Swarms | Do | 28 | 21.5 |
+| 17 | Infrastructure & Production | Do | 32 | 24.6 |
+| 18 | Ethics, Safety & Alignment | Do | 31 | 23.8 |
+| 19 | Capstone Projects | Do | 620 | 476.9 |
 
-Összesen (Review + Do, Capstone nélkül): ~408.5 óra → ~5 óra/hét mellett kb. 82 hét (~1.5 év).
-Capstone-nal (Phase 19) együtt: ~1028.5 óra → kb. 206 hét (~4 év) ~5 óra/hét mellett.
+### Személyes kalibráció (miért tér el az official-tól)
+20+ éves IT-háttér miatt két eltérő szorzót alkalmazunk:
+- **Fázis 0 (eszköz-fókuszú, ~5x gyorsulás):** a lecke-tartalom nagy része
+  (Git, terminál, Linux, Python env, editor) már ismert eszközhasználat, nem
+  új fogalom. Lecke-szintű méréssel igazolva: 01 és 02 ténylegesen ~10-15
+  perc volt a hivatalos 45-75 perc helyett (a hibakeresési idő — WSL
+  fájlrendszer, GitHub PAT — kivéve, mert egyszeri akadály, nem a lecke
+  tartalma). A 2.7 óra ebből a lecke-szintű újrabecslésből jön, nem egyetlen
+  szorzóból.
+- **Review/Do fázisok, Fázis 1-19 (tartalom-fókuszú, ~1.3x gyorsulás):** itt
+  valódi új anyag van (matek, DL, transformerek, agentek), ahol a
+  Placement-eredmény (0-1/2 pontok Math/DL/NLP-ben) valós hiányt jelez — ott
+  nem várható az 5x-ös gyorsulás, csak annyi, amennyit a gyors
+  kódolvasás/eszközhasználat ad.
+- **Módszer:** ez becslés, nem mérés — minden lecke után frissítjük a
+  Progress logot a tényleges idővel, és ha a mintázat eltér, itt
+  újrakalibráljuk a szorzót fázisonként.
+
+Összesen (Review + Do, Capstone nélkül) — official: ~408.5 óra, személyes becslés: ~306 óra → ~5 óra/hét mellett kb. 61 hét (~1.2 év).
+Capstone-nal (Phase 19) együtt — official: ~1028.5 óra, személyes becslés: ~783 óra → kb. 157 hét (~3 év) ~5 óra/hét mellett.
 
 ## Progress log
 | Date | Lesson | Quiz | Note |
