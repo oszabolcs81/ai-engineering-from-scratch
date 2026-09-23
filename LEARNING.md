@@ -75,3 +75,23 @@ Capstone-nal (Phase 19) együtt — official: ~1028.5 óra, személyes becslés:
 - Phase 1: valószínűségszámítás / Bayes-tétel (dobás-valószínűség kérdés hibázva)
 - Phase 3: backpropagation / chain rule, ResNet skip connection célja (mindkettő hibázva)
 - Phase 5: attention mechanizmus Q/K/V fogalma (hibázva)
+
+## Fogalomtár
+<!-- Élő szakasz: minden lecke után bővítjük az újonnan előkerült fogalmakkal. -->
+
+| Fogalom | Mire való, dióhéjban |
+|---|---|
+| **uv** | Gyors Python csomag- és verziókezelő (pip+venv helyett). Telepíti a Python-t, kezeli a virtuális környezetet és a csomagokat. |
+| **venv / virtuális környezet** | Elszigetelt Python "buborék" projektenként, hogy a csomagverziók ne ütközzenek más projektekkel. |
+| **PATH** | A rendszer listája, hogy a terminál hol keressen futtatható programokat. Ha egy frissen telepített program nincs a PATH-ban, a shell "command not found"-ot ír, pedig a program megvan. |
+| **WSL2** | "Windows Subsystem for Linux" — valódi Linux-kernelt futtat Windows alatt, hogy Linux-parancsokat/eszközöket natívan használhass. |
+| **/mnt/c vs. Linux natív fs (`~`)** | A `/mnt/c/...` a Windows-lemez WSL-en belüli elérése — ott a Linux-jogosultságkezelés (hardlink, symlink) nem működik jól. A `~/...` valódi Linux ext4 fájlrendszer, ahol minden simán megy. Ezért költöztünk oda. |
+| **Git — add / commit / push** | `add`: kijelölöd, mi kerüljön a mentésbe. `commit`: elmented egy pillanatképet lokálisan, üzenettel. `push`: felküldöd a mentést a GitHub-ra (távoli szerver). |
+| **Branch** | Párhuzamos munkaág a kódban, hogy a saját változtatásaid ne keveredjenek a fő (`main`) ággal. Nálunk ez a `my-progress`. |
+| **Fork** | GitHub-on egy másik felhasználó repójának saját másolata a te fiókodban, amire már van írási jogod (az eredetihez nincs). |
+| **PAT (Personal Access Token)** | Jelszó helyett használt, jogosultságokra szabható belépési kulcs a GitHub API-hoz/git push-hoz. "Fine-grained" típusnál pontosan meg kell adni, mihez (Contents, Workflows stb.) és milyen szinten (read/write) férhet hozzá. |
+| **nvidia-smi** | Parancssoros eszköz, ami megmutatja az NVIDIA GPU állapotát: driver-verzió, CUDA-verzió, VRAM-használat, hőmérséklet, futó folyamatok. |
+| **CUDA** | NVIDIA platformja, ami lehetővé teszi, hogy programok (pl. PyTorch) a GPU-n futtassák a számításokat, nem csak a CPU-n. |
+| **VRAM** | A GPU saját, gyors memóriája (nálad 4 GB) — korlátozza, mekkora modell fér el rajta egyszerre. Elkülönül a rendszer RAM-tól (nálad 32 GB). |
+| **fp16 / kvantálás (pl. Q4)** | A modell számainak tárolási pontossága. fp16 = 16 bites lebegőpontos (fele akkora hely, mint a szokásos 32 bit). Q4 = 4 bites kvantálás, még kisebb méret, kis pontosságvesztéssel — ezért fér el egy 8-12B-s modell is kis VRAM-ban. |
+| **Google Colab** | Ingyenes, böngészőből elérhető Jupyter-környezet Google-től, GPU-hozzáféréssel (T4, 16 GB VRAM) — ha a saját géped VRAM-ja nem elég egy feladathoz. |
